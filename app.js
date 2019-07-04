@@ -41,10 +41,11 @@ console.log(getCodeStr());
 function getArray() {
   let n = 8;
   let a = [];
-  for (let i = 0; i < n; i++) {
-    a.push(n[i]);
-  }
-  return a;
+  var i = 0;
+  do {
+    i = i + 1
+  } while (i < n);
+  return a.push[i];
 }
 
 console.log(getArray());
@@ -53,7 +54,7 @@ console.log(getArray());
 function doubleArray() {
   let arr = [1, 2, 3];
   let double = [];
-  return (double = arr + "," + arr);
+  return (double = arr.concat(arr));
 }
 
 console.log(doubleArray());
@@ -70,4 +71,30 @@ function changeCollection() {
 }
 
 console.log(changeCollection([3, 4, 5]));
+
 //Задача 8
+
+//function getUsers([]) {
+  //let usersArr = [
+    //{
+    //name: 'Denis',
+    //age: 30,
+    //gender: 'male'
+    //},
+    //{
+    //  name: 'Taras',
+    //  age: 26,
+    //  gender: 'male'
+    //},
+    //{
+    //  name: 'Pavlo',
+    //  age: 35,
+    //  gender: 'male'
+    //}
+  //] 
+  //let resultsArray = [];
+  //for (usersArr[field] === value) {
+  //    return (resultsArray.push(user));
+  //}
+//};
+//console.log(getUsers([]));
