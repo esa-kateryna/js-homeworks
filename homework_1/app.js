@@ -43,7 +43,7 @@ function getArray() {
   let a = [];
   var i = 0;
   do {
-    i = i + 1;
+    i = i + 1
   } while (i < n);
   return a.push[i];
 }
@@ -75,58 +75,26 @@ console.log(changeCollection([3, 4, 5]));
 //Задача 8
 
 //function getUsers([]) {
-//let usersArr = [
-//{
-//name: 'Denis',
-//age: 30,
-//gender: 'male'
-//},
-//{
-//  name: 'Taras',
-//  age: 26,
-//  gender: 'male'
-//},
-//{
-//  name: 'Pavlo',
-//  age: 35,
-//  gender: 'male'
-//}
-//]
-//let resultsArray = [];
-//for (usersArr[field] === value) {
-//    return (resultsArray.push(user));
-//}
+  //let usersArr = [
+    //{
+    //name: 'Denis',
+    //age: 30,
+    //gender: 'male'
+    //},
+    //{
+    //  name: 'Taras',
+    //  age: 26,
+    //  gender: 'male'
+    //},
+    //{
+    //  name: 'Pavlo',
+    //  age: 35,
+    //  gender: 'male'
+    //}
+  //] 
+  //let resultsArray = [];
+  //for (usersArr[field] === value) {
+  //    return (resultsArray.push(user));
+  //}
 //};
 //console.log(getUsers([]));
-
-//деструктурирующее присваивание
-//задача 1
-const { el1: a, el2: b, el3: c, el4: d } = el;
-console.log(el1);
-function task1() {
-  let task1rez = [];
-  for (let i = 0; i < arguments.length; i++) {
-    return (task1rez[i] = arguments[i].splice(0, 1));
-  }
-}
-
-console.log(task1({ el }));
-
-//функции высшего порядка
-//задача 1
-
-function firstFunc(arr, secondFunc) {
-  let hoarr = [1, 2, 3];
-  let newString = "";
-  newString = "New value: " + hoarr.toString();
-  function secondFunc() {
-    let newarr = [];
-    for (let i = 0; i < hoarr.length; i++) {
-      newarr = "New value: " + hoarr(arguments[i]);
-      return newarr;
-    }
-  }
-  return newString;
-}
-
-console.log(firstFunc());
